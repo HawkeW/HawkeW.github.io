@@ -1,0 +1,38 @@
+* {
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+hr {
+  height:1px;
+  border-bottom: 1px solid rgb(96, 110, 129);
+}
+li {
+  list-style: none;
+}
+span {
+  box-shadow: #4e4c4c 1px ;
+  color: #4e4c4c;
+  height: 25px;
+}
+a {
+  color: #4e4c4c;
+  text-decoration: none;
+  display: inline-block;
+}
+input {
+  width: 100px;
+  height: 25px;
+  border: 1px #4e4c4c solid;
+  border-bottom: 2px #4e4c4c solid;
+}
+.clearfloat {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+  }
+.index-container {
+  overflow: hidden;
+}  
