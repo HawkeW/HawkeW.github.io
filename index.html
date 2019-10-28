@@ -2,13 +2,13 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
+layout: default
 ---
 <div>
     <div class="index-header">
        <p style="text-align: center;"> hi,你来啦</p>
     </div>
-    <!-- 文章展示 -->
+    <!-- 文章列表 -->
     {% for post in site.posts %}
     <li>
         <a href="{{post.url}}">
@@ -18,5 +18,5 @@ layout: page
         <p class="excerpt">{{ post.excerpt}}</p>
     </li>
     {% endfor %}
-    <!-- 文章展示结束 -->
+    <!-- 文章列表结束 -->
 </div>
