@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)"
 date:   2019-10-28 12:04:00 +0800
 categories: jekyll update
