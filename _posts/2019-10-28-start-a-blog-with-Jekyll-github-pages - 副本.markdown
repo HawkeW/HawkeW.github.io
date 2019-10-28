@@ -2,13 +2,13 @@
 layout: post
 title:  "如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)"
 date:   2019-10-28 12:04:00 +0800
-categories: jekyll update
+categories: Jekyll update
 typora-root-url: ..
 ---
 
-首先说明，本人到目前为止只有前端基础知识，服务器也好，网站框架也好，其实并没有那么多了解…按理来说，现在搭博客有点早，毕竟对于技术知识来说，很多地方都只是半桶水…
 
-但是：在互联网有一个完全自己合法操控的地址，想干嘛就干嘛 ，果然还是很酷呀……
+
+在互联网有一个完全自己合法操控的地址，想干嘛就干嘛 ，果然还是很酷呀……
 
 作为一个穷x，本人的要求非常简单——
 
@@ -16,23 +16,19 @@ typora-root-url: ..
 * 有一个的可访问的服务器地址，暂时不用购买域名/服务器
 * 样式可以自己通过css定义，也有可选的模板
 
-那么，经过没有对比的选择之后，就直接选择了jekyll + github pages啦，开始无脑操作吧……
+那么，经过~~没有对比的~~慎重选择之后，就直接选择了Jekyll + github pages啦，开始无脑操作吧……
 
 
 
-首先学几个快捷键让自己的操作酷起来……
-
-## 命令行语句：
+注意：前置技能
 
 - `win` + `R` （或开始菜单--运行）输入`cmd`，`Enter`。打开windows命令行窗口
 
 - `cd + 路径/文件夹名称`
 
-  在命令行窗口输入cd 路径/文件夹，点击`Enter`，即进入文件夹目录。
+  在命令行窗口输入cd + 路径/文件夹，点击`Enter`，即进入文件夹目录。
 
-  
-
-  **注意**：如果是跨盘的路径，需要再次输入对应的盘符
+  如果是跨盘的路径，需要再次输入对应的盘符
 
   
 
@@ -76,11 +72,9 @@ typora-root-url: ..
 
 ## 环境准备
 
-### Jekyll
+由于Jekyll是基于ruby开发的，所以这里是需要搭建ruby的环境。另外Jekyll并不是面向windows开发的，所以还需要搭建类似于linux的环境（gcc,make）
 
-由于Jekyll是基于ruby开发的，所以这里是需要搭建ruby的环境。另外jekyll并不是面向windows开发的，所以还需要搭建类似于linux的环境（gcc,make）
-
-#### Jekyll环境准备
+###  Jekyll环境准备
 
 1. 安装ruby和gem
 
@@ -92,17 +86,17 @@ typora-root-url: ..
 
 3. 测试是否准备就绪
 
-   这里主要检测的是上述的环境是否成功搭建。主要是通过命令号语句。
+   这里主要检测的是上述的环境是否成功搭建。主要是通过命令行语句。
 
    快捷键 `win + R`，输入`cmd`,然后`Enter`进入命令行。
    
    * 测试ruby环境：`ruby -v` 成功返回ruby版本号。   `gem -v`成功返回gem版本号
-* 测试gcc环境：`gcc -v`
+   * 测试gcc环境：`gcc -v`
    * 测试make: `make -v`
 
-   各个命令都正确返回语句，jekyll的安装环境就准备就绪了。
+各个命令都正确返回语句，Jekyll的安装环境就准备就绪了。
 
-#### Jekyll安装
+### Jekyll安装
 
 快捷键`Win`+`R`,输入`cmd`并`Enter`打开命令行工具。
 
@@ -110,33 +104,33 @@ typora-root-url: ..
 
 `bundler install jekyll`
 
-jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试一下是否安装成功。
+Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试一下是否安装成功。
 
-## 创建博客及主题使用
+## 创建博客及使用
 
 ### 创建博客
 
-**Jekyll new + 博客名**
+**jekyll new + 博客名**
 
-在本地电脑选择合适的目录，新建一个jekyll博客框架。
+在本地电脑选择合适的目录，新建一个Jekyll博客框架。
 
-如这次我们想在F盘操作。
+如，这次我在F盘操作。
 
-`Win`+`R`,输入`cmd`并`Enter`打开命令行工具。输入`F:`，然后`Enter`,进入F盘目录下。
+打开命令行工具。输入`F:`，然后`Enter`,进入F盘目录下。
 
 再输入
 
-` jekyll new userName.github.io`
+`jekyll new userName.github.io`
 
-等待一段时间，jekyll就会生成一个博客框架啦~	
+等待一段时间，Jekyll就会生成一个博客框架啦~	
 
-![JekyllNewBlog](images\01-JekyllBlog\JekyllNewBlog.png)
+![JekyllNewBlog](\images\01-JekyllBlog\JekyllNewBlog.png)
 
-![JekyllNewBlog](images\01-JekyllBlog\JekyllNewBlog.png)
+![JekyllNewBlog](\images\01-JekyllBlog\JekyllNewBlog.png)
 
 创建博客中…… 
 
-![JekyllNewBlog-1](images\01-JekyllBlog\JekyllNewBlog-1.png)
+![JekyllNewBlog-1](\images\01-JekyllBlog\JekyllNewBlog-1.png)
 
 博客创建完毕~
 
@@ -148,7 +142,7 @@ jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 ### 在本地访问博客
 
-在博客目录下，使用jekyll serve或bundler exec jekyll serve，即可以在本地生成链接打开博客预览修改内容。
+在博客目录下，使用Jekyll serve或bundler exec Jekyll serve，即可以在本地生成链接打开博客预览修改内容。
 
 刚刚我们已经cd操作进入生成的username.github.io文件夹了，那么我们直接接着上一步——
 
@@ -156,65 +150,63 @@ jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 在命令行窗口，可以看到返回了一个Server address，后面跟着的`http`开头的地址就是我们的访问地址。
 
-![JekyllNewBlog-2](images\01-JekyllBlog\JekyllNewBlog-2.png)
+![JekyllNewBlog-2](\images\01-JekyllBlog\JekyllNewBlog-2.png)
 
 现在，我们在浏览器输入这个http地址，就可以在本地访问博客了。
 
-![JekyllNewBlog-3](images\01-JekyllBlog\JekyllNewBlog-3.png)
+![JekyllNewBlog-3](\images\01-JekyllBlog\JekyllNewBlog-3.png)
 
 
 
-### 博客目录及新增博客
-
-#### 目录结构
+### 目录结构
 
 打开页面后，我们可以看到页面整体的框架内容。
 
 其中**Posts**部分是所有博客的展示窗口。**Welcome to Jelkyll !** 是Jekyll默认生成的一篇博文。
 
-![JekyllNewBlog-5](images\01-JekyllBlog\JekyllNewBlog-5.png)
+![JekyllNewBlog-5](\images\01-JekyllBlog\JekyllNewBlog-5.png)
 
 
 
 对应的，我们可以在本地文件夹中，看到这样的目录结构，而_posts文件夹下的markdown后缀的文件，就是这篇标题为**Welcome to Jekyll!**的文章对应的文件了。
 
-![JekyllNewBlog-6](images\01-JekyllBlog\JekyllNewBlog-6.png)
+![JekyllNewBlog-6](\images\01-JekyllBlog\JekyllNewBlog-6.png)
 
-![JekyllNewBlog-7](images\01-JekyllBlog\JekyllNewBlog-7.png)
+![JekyllNewBlog-7](\images\01-JekyllBlog\JekyllNewBlog-7.png)
 
-#### 新增博客
-
-##### 修改和预览
+### 修改和预览
 
 我们进入_post文件夹后可以看到，当前这篇文章的命名，是以  YYYY-MM-DD-英文标题（Y:年，M:月，D:日）  这样的格式来进行命名的。我们创建新文章的时候，也需要这样进行命名。
 
-现在，我们用markdown文本编辑工具来打开示例用的`2019-10-28-welcome-to-jekyll`文件。
+现在，我们用markdown文本编辑工具来打开示例用的`2019-10-28-welcome-to-Jekyll`文件。
 
 你可以使用windows自带的 Notepad++，也可以下载一个markdown编辑器来打开。
 
 这里我使用的是Typora作为markdown编辑器。打开之后就是这样的。
 
-![JekyllNewBlog-8](images\01-JekyllBlog\JekyllNewBlog-8.png)
+![JekyllNewBlog-8](\images\01-JekyllBlog\JekyllNewBlog-8.png)
 
 可以看到，文章的最前方有一块儿区域是用来定义文章的显示样式（post模板的样式）、标题、日期和分类的。我们在这里简单对文字进行一下调整，然后回到刚刚的网页，使用F5刷新，可以看到对应的文字也会发生变化。
 
 这里，我调整里标题，并回到页面刷新，可以看到，文章标题已经变成了**Welcome to My Site!**
 
-![JekyllNewBlog-9](images\01-JekyllBlog\JekyllNewBlog-9.png)
+![JekyllNewBlog-9](\images\01-JekyllBlog\JekyllNewBlog-9.png)
 
-
-
-##### 新增
+### 新增文章
 
 在_posts文件夹下，我们复制一下示例文件，并把文件改名为"2019-10-28-Hello-World.markdown"。打开文件，并编辑内容。将标题和时间修改，把正文内容删除，并输入“Hello World！”。
 
-![JekyllNewBlog-10](images\01-JekyllBlog\JekyllNewBlog-10.png)
+![JekyllNewBlog-10](\images\01-JekyllBlog\JekyllNewBlog-10.png)
 
 回到之前打开的网页，刷新——
 
-![JekyllNewBlog-11](images\01-JekyllBlog\JekyllNewBlog-11.png)
+![JekyllNewBlog-11](\images\01-JekyllBlog\JekyllNewBlog-11.png)
 
-恭喜，你的第一篇文章就生成啦~！
+
+
+
+
+恭喜，你的第一篇文章生成啦~！
 
 
 
