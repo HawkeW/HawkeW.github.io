@@ -17,6 +17,14 @@
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
+      <!-- 分类 -->
+      <ul><li><a href="{{site.baseurl}}" data-category="all">归档</a></li>
+      {% for category in site.categories %}
+              {% for post in category.first %}<li><a href="{{site.baseurl}}/categories/{{ category | first }}" data-category="{{category.first}}">{{category.first}}({{category.last.size}})</a></li>
+              {% endfor %}
+      {% endfor %}
+    </ul>
+      <!-- 结束 -->
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}

@@ -30,6 +30,7 @@
  *
  * Update the foundational and global aspects of the page.
  */
+
 .pre {
   background:#fff;
 }
@@ -100,7 +101,23 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active {
   font-weight: bold;
 }
-
+.sidebar-nav > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* 首页欢迎 */
+/* .index-header{
+  width:35rem;
+  height: 19rem;
+  background: url("/images/bank-pig.jpg") no-repeat; 
+  background-size: 35rem 19rem;
+}
+.index-header > p{
+  
+  color: #fff;
+  font-size: 20px;
+} */
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the

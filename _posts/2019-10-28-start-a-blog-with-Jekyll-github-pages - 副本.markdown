@@ -2,7 +2,7 @@
 layout: post
 title:  "如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)"
 date:   2019-10-28 12:04:00 +0800
-categories: Jekyll update
+categories: Jekyll学习笔记
 typora-root-url: ..
 ---
 
@@ -38,7 +38,7 @@ typora-root-url: ..
 
   ` C:\Users\Administrator>`
 
-  加入我们想进入`C:\Users`目录下，在命令行界面输入，`cd C:\Users`即可，如
+  假如想进入`C:\Users`目录下，在命令行界面输入，`cd C:\Users`即可，如
 
   ` C:\Users\Administrator> cd C:\Users`  
 
@@ -46,9 +46,9 @@ typora-root-url: ..
 
   `C:\Users>`
 
-  说明我们成功进入了C盘的Users文件夹目录下。
+  说明已经成功进入了C盘的Users文件夹目录下。
 
-  
+  ![cmd-op](\images\01-JekyllBlog\cmd-op.gif)
 
   如果我们想进入`D:\Program Files`目录下，接着刚才的操作，就需要进行如下输入:
 
@@ -84,15 +84,20 @@ typora-root-url: ..
 
    gcc和make的安装稍微有点麻烦，本文是通过这里是通过 **MinGW** 来安装的，具体可以参考这篇博客。[windows 环境下安装gcc](https://blog.csdn.net/qq_16485855/article/details/84567639)。也可以在这里[点击下载**MinGW**]( https://sourceforge.net/projects/mingw/files/MinGW/ )。然后参考上面这篇博文安装就可以了。需要注意的是，安装完成之后一定要设置好路径，不然系统是没办法找到gcc和make，也就无法正常运行下面的只领了。
 
-3. 测试是否准备就绪
+3. 安装bundler
+
+   在命令行窗口，输入gem install bundler，等待安装
+
+4. 测试是否准备就绪
 
    这里主要检测的是上述的环境是否成功搭建。主要是通过命令行语句。
 
    快捷键 `win + R`，输入`cmd`,然后`Enter`进入命令行。
-   
+
    * 测试ruby环境：`ruby -v` 成功返回ruby版本号。   `gem -v`成功返回gem版本号
    * 测试gcc环境：`gcc -v`
    * 测试make: `make -v`
+   * 测试Bundler
 
 各个命令都正确返回语句，Jekyll的安装环境就准备就绪了。
 
@@ -102,7 +107,7 @@ typora-root-url: ..
 
 在命令行界面输入
 
-`bundler install jekyll`
+` gem install jekyll bundler`
 
 Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试一下是否安装成功。
 
@@ -174,6 +179,8 @@ Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 ![JekyllNewBlog-7](\images\01-JekyllBlog\JekyllNewBlog-7.png)
 
+你可以继续了解[一个基本Jekyll网站的目录结构]( http://jekyllcn.com/docs/structure/ )。
+
 ### 修改和预览
 
 我们进入_post文件夹后可以看到，当前这篇文章的命名，是以  YYYY-MM-DD-英文标题（Y:年，M:月，D:日）  这样的格式来进行命名的。我们创建新文章的时候，也需要这样进行命名。
@@ -209,4 +216,8 @@ Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 恭喜，你的第一篇文章生成啦~！
 
 
+
+### 深入学习
+
+更深入了解Jekyll,你可以点击这里进入国内大牛们翻译维护的[Jekyll中文站]( http://jekyllcn.com/ )，或进入[Jekyll官网（英文）]( https://jekyllrb.com/ )学习。
 

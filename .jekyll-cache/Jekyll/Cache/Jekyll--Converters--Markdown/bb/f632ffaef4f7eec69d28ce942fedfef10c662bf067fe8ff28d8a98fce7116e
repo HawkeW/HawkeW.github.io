@@ -1,4 +1,4 @@
-I"O%<p>在互联网有一个完全自己合法操控的地址，想干嘛就干嘛 ，果然还是很酷呀……</p>
+I"�&<p>在互联网有一个完全自己合法操控的地址，想干嘛就干嘛 ，果然还是很酷呀……</p>
 
 <p>作为一个穷x，本人的要求非常简单——</p>
 
@@ -29,7 +29,7 @@
 
     <p><code class="highlighter-rouge"> C:\Users\Administrator&gt;</code></p>
 
-    <p>加入我们想进入<code class="highlighter-rouge">C:\Users</code>目录下，在命令行界面输入，<code class="highlighter-rouge">cd C:\Users</code>即可，如</p>
+    <p>假如想进入<code class="highlighter-rouge">C:\Users</code>目录下，在命令行界面输入，<code class="highlighter-rouge">cd C:\Users</code>即可，如</p>
 
     <p><code class="highlighter-rouge"> C:\Users\Administrator&gt; cd C:\Users</code></p>
 
@@ -37,7 +37,9 @@
 
     <p><code class="highlighter-rouge">C:\Users&gt;</code></p>
 
-    <p>说明我们成功进入了C盘的Users文件夹目录下。</p>
+    <p>说明已经成功进入了C盘的Users文件夹目录下。</p>
+
+    <p><img src="/images/01-JekyllBlog/cmd-op.gif" alt="cmd-op" /></p>
 
     <p>如果我们想进入<code class="highlighter-rouge">D:\Program Files</code>目录下，接着刚才的操作，就需要进行如下输入:</p>
 
@@ -77,6 +79,11 @@
     <p>gcc和make的安装稍微有点麻烦，本文是通过这里是通过 <strong>MinGW</strong> 来安装的，具体可以参考这篇博客。<a href="https://blog.csdn.net/qq_16485855/article/details/84567639">windows 环境下安装gcc</a>。也可以在这里<a href="https://sourceforge.net/projects/mingw/files/MinGW/">点击下载<strong>MinGW</strong></a>。然后参考上面这篇博文安装就可以了。需要注意的是，安装完成之后一定要设置好路径，不然系统是没办法找到gcc和make，也就无法正常运行下面的只领了。</p>
   </li>
   <li>
+    <p>安装bundler</p>
+
+    <p>在命令行窗口，输入gem install bundler，等待安装</p>
+  </li>
+  <li>
     <p>测试是否准备就绪</p>
 
     <p>这里主要检测的是上述的环境是否成功搭建。主要是通过命令行语句。</p>
@@ -87,6 +94,7 @@
       <li>测试ruby环境：<code class="highlighter-rouge">ruby -v</code> 成功返回ruby版本号。   <code class="highlighter-rouge">gem -v</code>成功返回gem版本号</li>
       <li>测试gcc环境：<code class="highlighter-rouge">gcc -v</code></li>
       <li>测试make: <code class="highlighter-rouge">make -v</code></li>
+      <li>测试Bundler</li>
     </ul>
   </li>
 </ol>
@@ -99,7 +107,7 @@
 
 <p>在命令行界面输入</p>
 
-<p><code class="highlighter-rouge">bundler install jekyll</code></p>
+<p><code class="highlighter-rouge"> gem install jekyll bundler</code></p>
 
 <p>Jekyll就会开始安装啦。安装完毕后，可以使用<code class="highlighter-rouge">jekyll -v</code>来测试一下是否安装成功。</p>
 
@@ -107,13 +115,13 @@
 
 <h3 id="创建博客">创建博客</h3>
 
-<p><strong>Jekyll new + 博客名</strong></p>
+<p><strong>jekyll new + 博客名</strong></p>
 
 <p>在本地电脑选择合适的目录，新建一个Jekyll博客框架。</p>
 
-<p>如这次我们想在F盘操作。</p>
+<p>如，这次我在F盘操作。</p>
 
-<p><code class="highlighter-rouge">Win</code>+<code class="highlighter-rouge">R</code>,输入<code class="highlighter-rouge">cmd</code>并<code class="highlighter-rouge">Enter</code>打开命令行工具。输入<code class="highlighter-rouge">F:</code>，然后<code class="highlighter-rouge">Enter</code>,进入F盘目录下。</p>
+<p>打开命令行工具。输入<code class="highlighter-rouge">F:</code>，然后<code class="highlighter-rouge">Enter</code>,进入F盘目录下。</p>
 
 <p>再输入</p>
 
@@ -165,6 +173,8 @@
 
 <p><img src="\images\01-JekyllBlog\JekyllNewBlog-7.png" alt="JekyllNewBlog-7" /></p>
 
+<p>你可以继续了解<a href="http://jekyllcn.com/docs/structure/">一个基本Jekyll网站的目录结构</a>。</p>
+
 <h3 id="修改和预览">修改和预览</h3>
 
 <p>我们进入_post文件夹后可以看到，当前这篇文章的命名，是以  YYYY-MM-DD-英文标题（Y:年，M:月，D:日）  这样的格式来进行命名的。我们创建新文章的时候，也需要这样进行命名。</p>
@@ -193,6 +203,10 @@
 
 <p><img src="\images\01-JekyllBlog\JekyllNewBlog-11.png" alt="JekyllNewBlog-11" /></p>
 
-<p>恭喜，你的第一篇文章就生成啦~！</p>
+<p>恭喜，你的第一篇文章生成啦~！</p>
+
+<h3 id="深入学习">深入学习</h3>
+
+<p>更深入了解Jekyll,你可以点击这里进入国内大牛们翻译维护的<a href="http://jekyllcn.com/">Jekyll中文站</a>，或进入<a href="https://jekyllrb.com/">Jekyll官网（英文）</a>学习。</p>
 
 :ET
