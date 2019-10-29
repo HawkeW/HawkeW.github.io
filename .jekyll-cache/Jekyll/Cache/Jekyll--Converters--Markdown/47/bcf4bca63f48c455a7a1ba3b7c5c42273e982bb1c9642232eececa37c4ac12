@@ -1,0 +1,44 @@
+I"	<h3 id="github-pages">Github Pages</h3>
+
+<ol>
+  <li>
+    <p>Github账号注册及仓库创建</p>
+
+    <ul>
+      <li>
+        <p>账号注册</p>
+
+        <p>注册很简单，填一下用户名和邮箱密码，注册之后需要去邮箱点一下验证。</p>
+
+        <p><strong>注意</strong>：用户名将来与你的博客默认地址有关哦~如用户名是abc，那博客的默认地址则为<code class="highlighter-rouge">abc.github.io</code>。当然，这个地址可以通过某种方式替换掉为自己购买的网址，这里就不讨论。</p>
+
+        <p><img src="F:\Learn\Keyboard Broker\Blog\GithubSignup.png" alt="GithubSignup" /></p>
+      </li>
+      <li>
+        <p>仓库创建</p>
+
+        <p>登录账号后，点击Start a project创建一个项目。</p>
+
+        <p><img src="F:\Learn\Keyboard Broker\Blog\GithubNewRepo.png" alt="GithubNewRepo" /></p>
+
+        <p>将项目（仓库）名称设置为 <code class="highlighter-rouge">你的用户名.github.io</code>。图中报错是因为我已经创建了该项目（仓库）。勾选<code class="highlighter-rouge">Initialize this repository with a README</code>。最后点击<code class="highlighter-rouge">Create repository</code>成功创建项目。</p>
+
+        <p><img src="F:\Learn\Keyboard Broker\Blog\GithubNewRepo-1.png" alt="GithubNewRepo-1" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Git下载及安装</p>
+
+    <p>由于项目是放在github上服务器的，这里我们需要通过某种方式把本地的文档和代码推送到github上，这样才可以访问到我们的博客网站。</p>
+
+    <p>这个操作这里我们是通过Git来完成的。<a href="https://git-scm.com/downloads">点击下载Git</a></p>
+
+    <p>这里直接选择了默认的最新版本，下载完成后打开，选择安装路径之后无脑点确认就可以啦。</p>
+
+    <p><img src="F:\Learn\Keyboard Broker\Blog\Git-download.png" alt="Git-download" /></p>
+
+    <p>如果你不确定是否安装成功，可以在这里使用<code class="highlighter-rouge"> Win</code> + ` R<code class="highlighter-rouge">打开命令行，输入</code> git –version<code class="highlighter-rouge">，如果返回类似</code> git version  2.23.0.windows.1`这样的语句，则说明安装成功啦~</p>
+  </li>
+</ol>
+:ET

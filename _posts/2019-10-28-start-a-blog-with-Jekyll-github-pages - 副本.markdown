@@ -21,7 +21,7 @@ typora-root-url: ..
 
 
 
-注意：前置技能
+**前置技能**
 
 - `win` + `R` （或开始菜单--运行）输入`cmd`，`Enter`。打开windows命令行窗口
 
@@ -35,59 +35,53 @@ typora-root-url: ..
 
   **操作示例**——
 
-  打开命令行，显示
+  -同盘符操作
+
+  打开命令行对话框，显示
 
   ` C:\Users\Administrator>`
 
-  假如想进入`C:\Users`目录下，在命令行界面输入，`cd C:\Users`即可，如
+  假如想进入`C:\Users`目录下，在命令行对话框输入，`cd C:\Users`即可，如
 
   ` C:\Users\Administrator> cd C:\Users`  
 
-  则返回
-
-  `C:\Users>`
-
-  说明已经成功进入了C盘的Users文件夹目录下。
+  对话框返回`C:\Users>`，说明已经成功进入了C盘的Users文件夹目录下。
 
   ![cmd-op](\images\01-JekyllBlog\cmd-op.gif)
 
-  如果我们想进入`D:\Program Files`目录下，接着刚才的操作，就需要进行如下输入:
+  如果我们想进入`D:\Program Files`目录下，接着刚才的操作，输入` cd D:\Program Files`，并`Enter`, 命令行返回`C:\Users>`，此时我们再输入`D:`并回车，即可进入`D:\Program Files`目录下。整体操作如下：
 
-  `C:\Users>cd D:\Program Files`
-
-  `Enter`, 命令行返回
-
-  `C:\Users>`
-
-  此时我们再输入`D:`即可进入`D:\Program Files`目录下啦，操作如下：
+  ` C:\Users>cd D:\Program Files`
 
   `C:\Users>D:`
 
-  返回
-
   ` D:\Program Files `
 
-  进入成功~！
+  查看操作动图：
+
+  ![cmd-op-2](/images/01-JekyllBlog/cmd-op-2.gif)
 
   
 
 ## 环境准备
 
-由于Jekyll是基于ruby开发的，所以这里是需要搭建ruby的环境。另外Jekyll并不是面向windows开发的，所以还需要搭建类似于linux的环境（gcc,make）
+由于Jekyll是基于Ruby开发的，所以这里是需要搭建Ruby的运行环境。另外Jekyll并不是面向windows开发的，所以还需要搭建类似于Linux的环境（Gcc, Make）
 
 ###  Jekyll环境准备
 
-1. 安装ruby和gem
+1. 安装Ruby和Gem
 
-   点击[下载Ruby installer](https://rubyinstaller.org/downloads/)，选择Ruby+Devkit的套包直接下载安装就ok啦。
+   点击[下载Ruby installer](https://rubyinstaller.org/downloads/)，选择Ruby+Devkit的套包直接下载安装，Gem也会被一起安装。
 
 2. 安装gcc和make
 
-   gcc和make的安装稍微有点麻烦，本文是通过这里是通过 **MinGW** 来安装的，具体可以参考这篇博客。[windows 环境下安装gcc](https://blog.csdn.net/qq_16485855/article/details/84567639)。也可以在这里[点击下载**MinGW**]( https://sourceforge.net/projects/mingw/files/MinGW/ )。然后参考上面这篇博文安装就可以了。需要注意的是，安装完成之后一定要设置好路径，不然系统是没办法找到gcc和make，也就无法正常运行下面的只领了。
+   gcc和make的安装稍微有点麻烦，本文是通过这里是通过 **MinGW** 来安装的，具体可以参考这篇博客[windows 环境下安装gcc](https://blog.csdn.net/qq_16485855/article/details/84567639)。也可以在这里[点击下载**MinGW**]( https://sourceforge.net/projects/mingw/files/MinGW/ )。然后参考上面这篇博文安装就可以了。
 
-3. 安装bundler
+   需要注意的是，安装完成之后一定要设置好路径，不然系统是没办法运行gcc和make，也就无法正常继续运行下面的指令了。
 
-   在命令行窗口，输入gem install bundler，等待安装
+3. 安装bundle
+
+   在命令行窗口，输入gem install bundle，等待安装
 
 4. 测试是否准备就绪
 
@@ -98,9 +92,9 @@ typora-root-url: ..
    * 测试ruby环境：`ruby -v` 成功返回ruby版本号。   `gem -v`成功返回gem版本号
    * 测试gcc环境：`gcc -v`
    * 测试make: `make -v`
-   * 测试Bundler
+   * 测试Bundler:`bundler -v`
 
-各个命令都正确返回语句，Jekyll的安装环境就准备就绪了。
+各个命令都正确返回类似`... version ...`的语句，Jekyll的安装环境就准备就绪了。
 
 ### Jekyll安装
 
@@ -120,7 +114,7 @@ Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 在本地电脑选择合适的目录，新建一个Jekyll博客框架。
 
-如，这次我在F盘操作。
+如，这次我在F盘操作，创建一个名为`username.github.io`的博客。为了方便后续的操作，请直接替换username为你的Github用户名。后续操作也是类似。
 
 打开命令行工具。输入`F:`，然后`Enter`,进入F盘目录下。
 
@@ -148,9 +142,9 @@ Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 ### 在本地访问博客
 
-在博客目录下，使用Jekyll serve或bundler exec Jekyll serve，即可以在本地生成链接打开博客预览修改内容。
+命令行对话框在博客目录下时，使用`Jekyll serve`或`bundler exec Jekyll serve`，即可以在本地生成链接打开博客预览修改内容。
 
-刚刚我们已经cd操作进入生成的username.github.io文件夹了，那么我们直接接着上一步——
+刚刚我们已经cd操作进入生成的username.github.io文件夹了，那么我们直接接着上一步，直接输入——
 
 `jekyll serve`
 
@@ -158,7 +152,7 @@ Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 ![JekyllNewBlog-2](\images\01-JekyllBlog\JekyllNewBlog-2.png)
 
-现在，我们在浏览器输入这个http地址，就可以在本地访问博客了。
+现在，我们在浏览器输入这个http地址，就可以在本地访问博客了。你也可以直接使用localhost代替ip地址进行访问操作，在浏览器直接输入http://localhost:4000/ 就可以啦
 
 ![JekyllNewBlog-3](\images\01-JekyllBlog\JekyllNewBlog-3.png)
 
@@ -184,7 +178,7 @@ Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 ### 修改和预览
 
-我们进入_post文件夹后可以看到，当前这篇文章的命名，是以  YYYY-MM-DD-英文标题（Y:年，M:月，D:日）  这样的格式来进行命名的。我们创建新文章的时候，也需要这样进行命名。
+我们进入_post文件夹后可以看到，当前这篇文章的命名，是以  YYYY-MM-DD-英文标题（Y:年，M:月，D:日）  这样的格式来进行命名的。这种命名方式是由Jekyll规定的，所以我们创建新文章的时候，也需要这样进行命名。
 
 现在，我们用markdown文本编辑工具来打开示例用的`2019-10-28-welcome-to-Jekyll`文件。
 
