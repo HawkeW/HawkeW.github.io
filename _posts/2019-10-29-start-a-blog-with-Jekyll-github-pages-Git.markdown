@@ -2,7 +2,7 @@
 layout: post
 title:  "如何使用Jekyll+Github pages 快速搭建个人博客？(Git篇)"
 date:   2019-10-29 14:30:00 +0800
-categories: Jekyll学习笔记
+categories: Jekyll
 excerpt: Github pages使用方法
 typora-root-url: ..
 ---
@@ -23,7 +23,7 @@ typora-root-url: ..
 
 ![Git-download](/images/01-JekyllBlog/Git-download.png)
 
-如果你不确定是否安装成功，可以在这里使用` Win` + ` R`打开命令行，输入` git --version`，如果返回类似` git version  2.23.0.windows.1`这样的语句，说明已经安装好了。
+如果你不确定是否安装成功，可以在这里使用 ` Win` + ` R` 打开命令行，输入 ` git --version` ，如果返回类似 ` git version  2.23.0.windows.1` 这样的语句，说明已经安装好了。
 
 ### Git配置
 
@@ -36,7 +36,7 @@ $ git config --global user.email "email@example.com"
 
 ### Github账号
 
-本地环境准备好后，你需要有一个Github账号来使用Github pages。账号注册过程很简单，你只需要填一下用户名和邮箱密码，然后邮箱点一下验证就注册成功了。
+本地环境准备好后，你需要有一个Github账号来使用Github pages。账号注册过程很简单，只需要填一下用户名，邮箱和密码，然后在用来申请的邮箱里点一下邮件的验证就注册成功了。
 
 **注意**：用户名将来与你的博客默认地址有关。如用户名是abc，那博客的默认地址则为`abc.github.io`。当然，这个地址可以通过某种方式替换掉为自己购买的网址，这里就暂时不讨论了。
 

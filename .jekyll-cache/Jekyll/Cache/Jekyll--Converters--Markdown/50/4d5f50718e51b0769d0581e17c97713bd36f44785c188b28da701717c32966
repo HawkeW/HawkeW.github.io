@@ -1,4 +1,4 @@
-I"<p>在<a href="/jekyll%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2019/10/28/start-a-blog-with-Jekyll-github-pages-Jekyll.html">如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)</a>，我们已经在本地创建了博客的编写环境，展示了预览状态下的博客。这篇文章将会让你的博客在互联网拥有地址，可以从任何地方在线访问。</p>
+I"�<p>在<a href="/jekyll/2019/10/28/start-a-blog-with-Jekyll-github-pages-Jekyll.html">如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)</a>，我们已经在本地创建了博客的编写环境，展示了预览状态下的博客。这篇文章将会让你的博客在互联网拥有地址，可以从任何地方在线访问。</p>
 
 <h2 id="环境准备">环境准备</h2>
 
@@ -12,7 +12,7 @@
 
 <p><img src="/images/01-JekyllBlog/Git-download.png" alt="Git-download" /></p>
 
-<p>如果你不确定是否安装成功，可以在这里使用<code class="highlighter-rouge"> Win</code> + ` R<code class="highlighter-rouge">打开命令行，输入</code> git –version<code class="highlighter-rouge">，如果返回类似</code> git version  2.23.0.windows.1`这样的语句，说明已经安装好了。</p>
+<p>如果你不确定是否安装成功，可以在这里使用 ` Win<code class="highlighter-rouge"> + </code> R<code class="highlighter-rouge"> 打开命令行，输入 </code> git –version<code class="highlighter-rouge"> ，如果返回类似 </code> git version  2.23.0.windows.1` 这样的语句，说明已经安装好了。</p>
 
 <h3 id="git配置">Git配置</h3>
 
@@ -24,7 +24,7 @@ $ git config --global user.email "email@example.com"
 
 <h3 id="github账号">Github账号</h3>
 
-<p>本地环境准备好后，你需要有一个Github账号来使用Github pages。账号注册过程很简单，你只需要填一下用户名和邮箱密码，然后邮箱点一下验证就注册成功了。</p>
+<p>本地环境准备好后，你需要有一个Github账号来使用Github pages。账号注册过程很简单，只需要填一下用户名，邮箱和密码，然后在用来申请的邮箱里点一下邮件的验证就注册成功了。</p>
 
 <p><strong>注意</strong>：用户名将来与你的博客默认地址有关。如用户名是abc，那博客的默认地址则为<code class="highlighter-rouge">abc.github.io</code>。当然，这个地址可以通过某种方式替换掉为自己购买的网址，这里就暂时不讨论了。</p>
 
@@ -52,11 +52,11 @@ $ git config --global user.email "email@example.com"
 
 <h3 id="远程操作">远程操作</h3>
 
-<p>我们已经有了一个Github page地址，和一个用来存放博客页面文件的Github仓库。现在，我们只需要把在<a href="/jekyll%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2019/10/28/start-a-blog-with-Jekyll-github-pages-Jekyll.html">Jekyll篇</a>生成的文档传到Github仓库就可以了。</p>
+<p>我们已经有了一个Github page地址，和一个用来存放博客页面文件的Github仓库。现在，我们只需要把在<a href="/jekyll/2019/10/28/start-a-blog-with-Jekyll-github-pages-Jekyll.html">Jekyll篇</a>生成的文档传到Github仓库就可以了。</p>
 
 <h4 id="1克隆仓库到本地">1.克隆仓库到本地</h4>
 
-<p>在本地电脑中，进入在<a href="/jekyll%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2019/10/28/start-a-blog-with-Jekyll-github-pages-Jekyll.html">jekyll篇</a>创建的username.github.io文件夹的上级目录。由于我这里是在F:盘创建了username.github.io，所以我进入F:盘根目录就可以了。</p>
+<p>在本地电脑中，进入在<a href="/jekyll/2019/10/28/start-a-blog-with-Jekyll-github-pages-Jekyll.html">jekyll篇</a>创建的username.github.io文件夹的上级目录。由于我这里是在F:盘创建了username.github.io，所以我进入F:盘根目录就可以了。</p>
 
 <p>进入上述的目录后，右键单击空白处–&gt;Git bash Here，进入git命令行窗口。</p>
 
