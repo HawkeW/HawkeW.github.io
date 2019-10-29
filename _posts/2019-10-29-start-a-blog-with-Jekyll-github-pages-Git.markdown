@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "如何使用Jekyll+Github pages 快速搭建个人博客？(Git篇)"
-date:   2019-10-28 12:04:00 +0800
+date:   2019-10-29 14:30:00 +0800
 categories: Jekyll学习笔记
 excerpt: Github pages使用方法
 typora-root-url: ..
