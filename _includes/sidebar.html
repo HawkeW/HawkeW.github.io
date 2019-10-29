@@ -18,13 +18,30 @@
       {% endcomment %}
 
       <!-- 分类 -->
-      <ul><li><a href="{{site.baseurl}}" data-category="all">归档</a></li>
-      {% for category in site.categories %}
-              {% for post in category.first %}<li><a href="{{site.baseurl}}/categories/{{ category | first }}" data-category="{{category.first}}">{{category.first}}({{category.last.size}})</a></li>
+      <!-- <ul>
+        {% for category in site.categories %}
+        <li><a href="{{site.baseurl}}/categories" data-category="all">归档</a></li>
+              {% for post in category.first %}
+        <li>
+                <a href="{{site.baseurl}}/categories/{{ category | first }}" 
+                data-category="{{category.first}}">
+                {{category.first}}({{category.last.size}})
+              </a>
+        </li>
               {% endfor %}
-      {% endfor %}
+          {% endfor %}
+    </ul> -->
+
+    <ul>
+
+        {% for category in site.categories %}
+        <li>
+          <a href="/categories/{{ category | first }}" title="view all posts">
+        {{ category | first }} ({{ category | last | size }})</a>
+        </li>
+        {% endfor %}
     </ul>
-      <!-- 结束 -->
+      <!-- 分类结束 -->
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
