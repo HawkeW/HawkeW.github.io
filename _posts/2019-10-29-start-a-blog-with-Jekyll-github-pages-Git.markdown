@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)"
+title:  "如何使用Jekyll+Github pages 快速搭建个人博客？(Git篇)"
 date:   2019-10-28 12:04:00 +0800
 categories: Jekyll学习笔记
 excerpt: Github pages使用方法
@@ -9,7 +9,7 @@ typora-root-url: ..
 
 
 
-在[如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)]()，我们已经在本地创建了博客的编写环境，展示了预览状态下的博客。这篇文章将会让你的博客在互联网拥有地址，可以从任何地方在线访问。
+在[如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)]({% post_url 2019-10-28-start-a-blog-with-Jekyll-github-pages-Jekyll %})，我们已经在本地创建了博客的编写环境，展示了预览状态下的博客。这篇文章将会让你的博客在互联网拥有地址，可以从任何地方在线访问。
 
 ## 环境准备
 
@@ -19,11 +19,9 @@ typora-root-url: ..
 
 从本地把文档推送到github服务器中，这个操作这里我们是通过Git来完成的。[点击下载Git](https://git-scm.com/downloads)
 
-![Git-download](/images/01-JekyllBlog/Git-download.png)
-
 这里直接选择了默认的最新版本，下载完成后打开，选择安装路径之后一路确定到底，git就安装成功了。
 
-![Git-download](/images/01-JekyllBlog/Git-download.png
+![Git-download](/images/01-JekyllBlog/Git-download.png)
 
 如果你不确定是否安装成功，可以在这里使用` Win` + ` R`打开命令行，输入` git --version`，如果返回类似` git version  2.23.0.windows.1`这样的语句，说明已经安装好了。
 
@@ -35,8 +33,6 @@ typora-root-url: ..
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 ```
-
-
 
 ### Github账号
 
@@ -70,11 +66,11 @@ $ git config --global user.email "email@example.com"
 
 ### 远程操作
 
-我们已经有了一个Github page地址，和一个用来存放博客页面文件的Github仓库。现在，我们只需要把在Jekyll篇生成的文档传到Github仓库就可以了。
+我们已经有了一个Github page地址，和一个用来存放博客页面文件的Github仓库。现在，我们只需要把在[Jekyll篇]({% post_url 2019-10-28-start-a-blog-with-Jekyll-github-pages-Jekyll %})生成的文档传到Github仓库就可以了。
 
 #### 1.克隆仓库到本地
 
-在本地电脑中，进入在jekyll篇创建的username.github.io文件夹的上级目录。由于我这里是在F:盘创建了username.github.io，所以我进入F:盘根目录就可以了。
+在本地电脑中，进入在[jekyll篇]({% post_url 2019-10-28-start-a-blog-with-Jekyll-github-pages-Jekyll %})创建的username.github.io文件夹的上级目录。由于我这里是在F:盘创建了username.github.io，所以我进入F:盘根目录就可以了。
 
 进入上述的目录后，右键单击空白处-->Git bash Here，进入git命令行窗口。
 
@@ -117,4 +113,4 @@ git status #查看提交的修改状态
 git push origin master #推送本地的commit到远程仓库origin中
 ```
 
-Git是一个非常好用的版本控制系统，你可以到[廖雪峰的官方网站-Git教程]( https://www.liaoxuefeng.com/wiki/896043488029600 )或[猴子都能懂的GIT入门]( https://backlog.com/git-tutorial/cn/ )继续学习Git相关的操作内容。
+Git是一个非常强大好用的版本控制系统，你可以到[廖雪峰的官方网站-Git教程]( https://www.liaoxuefeng.com/wiki/896043488029600 )或[猴子都能懂的GIT入门]( https://backlog.com/git-tutorial/cn/ )继续学习Git相关的操作内容。

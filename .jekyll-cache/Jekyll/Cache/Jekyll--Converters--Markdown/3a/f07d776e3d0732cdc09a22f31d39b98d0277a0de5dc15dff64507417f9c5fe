@@ -1,0 +1,101 @@
+I"<p>在<a href="/jekyll%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2019/10/28/start-a-blog-with-Jekyll-github-pages-Jekyll.html">如何使用Jekyll+Github pages 快速搭建个人博客？(Jekyll篇)</a>，我们已经在本地创建了博客的编写环境，展示了预览状态下的博客。这篇文章将会让你的博客在互联网拥有地址，可以从任何地方在线访问。</p>
+
+<h2 id="环境准备">环境准备</h2>
+
+<h3 id="git下载安装">Git下载安装</h3>
+
+<p>由于Github pages项目是放在github上服务器的，这里我们需要通过某种方式把本地的文档和代码推送到github上，这样才可以访问到我们的博客网站。</p>
+
+<p>从本地把文档推送到github服务器中，这个操作这里我们是通过Git来完成的。<a href="https://git-scm.com/downloads">点击下载Git</a></p>
+
+<p>这里直接选择了默认的最新版本，下载完成后打开，选择安装路径之后一路确定到底，git就安装成功了。</p>
+
+<p><img src="/images/01-JekyllBlog/Git-download.png" alt="Git-download" /></p>
+
+<p>如果你不确定是否安装成功，可以在这里使用<code class="highlighter-rouge"> Win</code> + ` R<code class="highlighter-rouge">打开命令行，输入</code> git –version<code class="highlighter-rouge">，如果返回类似</code> git version  2.23.0.windows.1`这样的语句，说明已经安装好了。</p>
+
+<h3 id="git配置">Git配置</h3>
+
+<p>如果是第一次在本地使用Git，需要配置一下用户名和邮箱。我们在桌面右键，点击Git bash here，进入Git命令行窗口。依次输入以下指令：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+</code></pre></div></div>
+
+<h3 id="github账号">Github账号</h3>
+
+<p>本地环境准备好后，你需要有一个Github账号来使用Github pages。账号注册过程很简单，你只需要填一下用户名和邮箱密码，然后邮箱点一下验证就注册成功了。</p>
+
+<p><strong>注意</strong>：用户名将来与你的博客默认地址有关。如用户名是abc，那博客的默认地址则为<code class="highlighter-rouge">abc.github.io</code>。当然，这个地址可以通过某种方式替换掉为自己购买的网址，这里就暂时不讨论了。</p>
+
+<p><img src="/images/01-JekyllBlog/GithubSignup.png" alt="GithubSignup" /></p>
+
+<h2 id="github-pages">Github pages</h2>
+
+<h3 id="创建">创建</h3>
+
+<p>注册并登录账号后，点击Start a project创建一个项目。</p>
+
+<p><img src="/images/01-JekyllBlog/GithubNewRepo.png" alt="GithubNewRepo" /></p>
+
+<p>将项目（仓库）名称设置为 <code class="highlighter-rouge">username.github.io</code>(图中报错是因为我已经创建了该项目（仓库）)。勾选<code class="highlighter-rouge">Initialize this repository with a README</code>。最后点击<code class="highlighter-rouge">Create repository</code>成功创建项目。</p>
+
+<p><img src="/images/01-JekyllBlog/GithubNewRepo-1.png" alt="GithubNewRepo-1" /></p>
+
+<p>点击创建成功后，你可以点击右上角的<code class="highlighter-rouge">用户名</code>–&gt;<code class="highlighter-rouge">Your repositories</code>，进入你的仓库列表。在这里可以看到刚刚创建好的<code class="highlighter-rouge">[username].github.io</code>，仓库内部有一个README.md文件。</p>
+
+<p>恭喜你，现在已经可以通过访问<code class="highlighter-rouge">http://[username].github.io</code>进入自己的博客啦！</p>
+
+<p>此时进入博客地址，你会发现博一片空白。这是因为我们的仓库中没有内容。</p>
+
+<p>我们可以对README.md随意输入字符<code class="highlighter-rouge">Hello World</code>，再回到页面刷新，会发现页面出现了<code class="highlighter-rouge">Hello World</code>！在上一篇文章中，我们看到jekyll生成了超多的文件。其实从这里也可以大概了解到，一个博客其实肯定不是一个简单的md文件组成的，这也是我们需要用到jekyll 框架的原因之一。</p>
+
+<h3 id="远程操作">远程操作</h3>
+
+<p>我们已经有了一个Github page地址，和一个用来存放博客页面文件的Github仓库。现在，我们只需要把在Jekyll篇生成的文档传到Github仓库就可以了。</p>
+
+<h4 id="1克隆仓库到本地">1.克隆仓库到本地</h4>
+
+<p>在本地电脑中，进入在jekyll篇创建的username.github.io文件夹的上级目录。由于我这里是在F:盘创建了username.github.io，所以我进入F:盘根目录就可以了。</p>
+
+<p>进入上述的目录后，右键单击空白处–&gt;Git bash Here，进入git命令行窗口。</p>
+
+<p>回到Github后台，点击创建好的username.github.io仓库，进入后点击Clone or download，复制仓库地址。</p>
+
+<p><img src="/images/01-JekyllBlog/GithubPage-1.png" alt="GithubPage-1" /></p>
+
+<p>在命令行窗口，输入<code class="highlighter-rouge">git clone + 仓库地址</code>，并回车，如果你是第一次远程操作，那么Git会要求你输入Github用户名和密码。接着，Git将会把创建好的博客内容复制到本地，并创建一个和仓库名称同名的文件夹。</p>
+
+<p>在上篇中，我在本地已经创建了<code class="highlighter-rouge">[username].github.io</code>这个文件夹，git会检测到并直接把仓库中的内容直接复制到该文件夹下。</p>
+
+<p>克隆结束后，进入该文件夹，会发现里面多了个<code class="highlighter-rouge">README.md</code>文件，这正是我们在创建仓库的时候生成的文件。同时，还可以发现一个<code class="highlighter-rouge">.git</code>文件夹。</p>
+
+<h4 id="2推送博客到仓库">2.推送博客到仓库</h4>
+
+<p>通过Git操作，我们可以快速的把之前生成的博客内容推送到github仓库。</p>
+
+<p>可以依次使用下方的代码进行操作：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin [你的仓库地址]
+git add .  
+git commit -m "First commit" 
+git status
+git push origin master
+</code></pre></div></div>
+
+<p>现在，进入你的博客地址，你就会发现博客和在本地预览的一模一样啦！</p>
+
+<h4 id="3继续学习">3.继续学习</h4>
+
+<p>使用github page，我们会频繁的用到git指令。</p>
+
+<p>其中，最常用的就是</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .  #git add 添加变更文件。"."为所有文件，你可以将它替换为文件名，如 git add README.md
+git commit -m ""  #提交修改，双引号中的内容是给自己看的修改内容
+git status #查看提交的修改状态
+git push origin master #推送本地的commit到远程仓库origin中
+</code></pre></div></div>
+
+<p>Git是一个非常强大好用的版本控制系统，你可以到<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰的官方网站-Git教程</a>或<a href="https://backlog.com/git-tutorial/cn/">猴子都能懂的GIT入门</a>继续学习Git相关的操作内容。</p>
+:ET

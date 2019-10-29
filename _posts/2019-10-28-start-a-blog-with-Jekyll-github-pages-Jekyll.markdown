@@ -206,9 +206,9 @@ Jekyll就会开始安装啦。安装完毕后，可以使用`jekyll -v`来测试
 
 
 
-
-
 恭喜，你的第一篇文章生成啦~！
+
+[点击这里，查看如何通过Github Page在线访问你的博客吧~！]({% post_url  2019-10-29-start-a-blog-with-Jekyll-github-pages-Git%})
 
 
 
