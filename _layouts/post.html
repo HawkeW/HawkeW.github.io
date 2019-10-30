@@ -16,20 +16,22 @@ layout: default
   {{ content }}
 </div>
 
-<div id="container"></div>
+<div id="comments"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-var gitment = new Gitment({
-  //id: '页面 ID', // 可选。默认为 location.href
+  const gitment = new Gitment({
+  // id: 'Your page ID', // optional
   owner: 'HawkeW',
-  repo: 'https://github.com/HawkeW/HawkeW.github.io',
+  repo: 'HawkeW.github.io',
   oauth: {
     client_id: 'd457861dcc1a62123b10',
     client_secret: 'b5e1a5cd5b92856760bf0db81f8e294f9d1a6ede',
   },
+  // ...
+  // For more available options, check out the documentation below
 })
-gitment.render('container')
+gitment.render('comments')
 
 </script>
 
