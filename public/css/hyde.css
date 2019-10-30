@@ -139,6 +139,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
+  position:relative;
   padding-top:    4rem;
   padding-bottom: 4rem;
 }

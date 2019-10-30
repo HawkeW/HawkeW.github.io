@@ -1,20 +1,28 @@
 ---
 layout: default
 ---
-<!-- 文章内容 -->
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">
-    {{ page.date | date_to_string }} 
-    <span style="margin-left:5rem;"> 
-      views:
-      <span id="busuanzi_value_page_pv">
+  <!-- 目录引用 -->
+  <!--toc -->
+  <script src="/public/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/public/js/toc.js" type="text/javascript"></script>
 
+  <link rel="stylesheet" href="/public/css/post.css">
+  
+<div class="article-container">
+  <!-- 文章内容 -->
+  <div class="post">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <span class="post-date">
+      {{ page.date | date_to_string }} 
+      <span style="margin-left:5rem;"> 
+        views:
+        <span id="busuanzi_value_page_pv">
+
+        </span>
       </span>
     </span>
-  </span>
-  {{ content }}
-</div>
+    {{ content }}
+  </div>
 
 <!--   gitalk       -->
 <div class="comment">
@@ -32,6 +40,8 @@ layout: default
     gitalk.render('gitalk-container')
     </script> 
 </div>
+
+
 <!-- Related -->
 <div class="related">
   <h2>相关文章</h2>
@@ -49,3 +59,6 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+</div>
+<!-- 目录 -->
+<div id="toc" class="toc"></div>
