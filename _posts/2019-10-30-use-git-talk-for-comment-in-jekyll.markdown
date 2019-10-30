@@ -3,13 +3,11 @@ layout: post
 title:  "使用gitalk作为jekyll博客的评论组件"
 date:   2019-10-30 15:30:00 +0800
 categories: Jekyll
-excerpt: Github pages使用方法
+excerpt: 使用gitalk快速添加博客评论组件
 typora-root-url: ..
 ---
 
 在使用gitalk之前，有检索到关于gitment组件的文章，但经过测试使用后，发现一直报错` [object ProgressEvent]  `并无法进行初始化。
-
-后来继续检索，发现gitalk和gitment用法基本类似，改起来也没那么麻烦，就直接换成gitalk，然后测试下来也没什么问题，所以就继续使用啦。
 
 你可以在文章下方看到基于gitalk的评论组件，也可以点击[Demo]( https://gitalk.github.io/ )，来测试一下看看它是否是你想要的效果。
 
