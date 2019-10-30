@@ -4,7 +4,7 @@ module Jekyll
     def initialize(site, base, dir, category)
       @site = site
       @base = base
-      @dir = dir
+      @dir =  dir
       @name = 'index.html'
 
       self.process(@name)
@@ -21,7 +21,7 @@ module Jekyll
     
     def generate(site)
       if site.layouts.key? 'category_index'
-        dir = site.config['category_dir'] || 'categories'
+        dir =  site.config['category_dir'] || 'categories'
         site.categories.keys.each do |category|
           write_category_index(site, File.join(dir, category), category)
         end
