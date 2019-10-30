@@ -142,7 +142,9 @@ a.sidebar-nav-item:focus {
   padding-top:    4rem;
   padding-bottom: 4rem;
 }
-
+pre {
+  background-color:rgb(236, 236, 236);
+}
 @media (min-width: 48em) {
   .content {
     max-width: 38rem;
