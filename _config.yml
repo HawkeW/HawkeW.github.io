@@ -40,14 +40,14 @@ plugins:
 # disqus_username: Lucy
 
 # Netease settings
-netease_comment: false
-gitalk:
-  enable: true
-  owner: HawkeW
-  repo: HawkeW.github.io
-  clientID: d457861dcc1a62123b10
-  clientSecret: b5e1a5cd5b92856760bf0db81f8e294f9d1a6ede
-  admin: HawkeW
+# netease_comment: false
+# gitalk:
+#   enable: true
+#   owner: HawkeW
+#   repo: HawkeW.github.io
+#   clientID: d457861dcc1a62123b10
+#   clientSecret: b5e1a5cd5b92856760bf0db81f8e294f9d1a6ede
+#   admin: HawkeW
 
 # Exclude from processing.
 # The following items will not be processed, by default.
