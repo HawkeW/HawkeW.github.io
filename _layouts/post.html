@@ -17,9 +17,11 @@ layout: default
 </div>
 
 <div id="comments"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
 <script>
+  import 'gitment/style/default.css'
+  import Gitment from 'gitment'
+
   const gitment = new Gitment({
   // id: 'Your page ID', // optional
   owner: 'HawkeW',
@@ -32,7 +34,6 @@ layout: default
   // For more available options, check out the documentation below
 })
 gitment.render('comments')
-
 </script>
 
 <div class="related">
