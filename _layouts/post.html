@@ -17,13 +17,11 @@ layout: default
 </div>
 
 <div id="comments"></div>
-
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script>
-  import 'gitment/style/default.css'
-  import Gitment from 'gitment'
-
   const gitment = new Gitment({
-  // id: 'Your page ID', // optional
+  id: '{{ page.title }}', // optional
   owner: 'HawkeW',
   repo: 'HawkeW.github.io',
   oauth: {
