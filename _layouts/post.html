@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<!-- 文章内容 -->
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">
@@ -17,12 +17,8 @@ layout: default
 </div>
 
 <!--   gitalk       -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
 <div class="comment">
     <div id="gitalk-container"></div>
-    
     <script>
     var gitalk = new Gitalk({
         id: 'page.date',
@@ -36,25 +32,7 @@ layout: default
     gitalk.render('gitalk-container')
     </script> 
 </div>
-<!-- 
-<div id="comments"></div>
-<script src="/public/js/gitment.js"></script>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script>
-  const gitment = new Gitment({
-  id: location.href,  // optional
-  owner: 'HawkeW',
-  repo: 'HawkeW.github.io',
-  oauth: {
-    client_id: 'd457861dcc1a62123b10',
-    client_secret: 'b5e1a5cd5b92856760bf0db81f8e294f9d1a6ede',
-  },
-  // ...
-  // For more available options, check out the documentation below
-})
-gitment.render('comments')
-</script> -->
-
+<!-- Related -->
 <div class="related">
   <h2>相关文章</h2>
 
