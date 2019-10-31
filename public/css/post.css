@@ -1,7 +1,7 @@
 .container {
     max-width: 50rem;
     padding-right: 1rem;
-    /* margin-left: auto; */
+    padding-left: 1rem;
     margin-right: 2rem;
 }
 .article-container{

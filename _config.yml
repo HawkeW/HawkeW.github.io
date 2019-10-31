@@ -22,8 +22,9 @@ title: 一度°
 email: hughew@foxmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Once°<br />
-  The Learner of Front End Programming, Dedicator of movies, Begginner of Photography, Lover of beautiful life.
-  <br />"What once lived shall be alive forever"
+  Here I live
+
+#The Learner of Front End Programming, Dedicator of movies, Begginner of Photography, Lover of beautiful life.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hawkew.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -36,7 +37,7 @@ plugins:
   - jekyll-feed
 
 # Disqus settings
-
+catetoggle: 0
 # disqus_username: Lucy
 
 # Netease settings

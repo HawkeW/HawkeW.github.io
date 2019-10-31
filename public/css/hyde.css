@@ -73,7 +73,11 @@ html {
 
 /* Sidebar links */
 .sidebar a {
+  text-decoration:none;
   color: #fff;
+}
+.sidebar a:hover {
+  text-decoration:none;
 }
 
 /* About section */
@@ -267,4 +271,7 @@ pre {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+a:hover{
+  text-decoration: none;
 }

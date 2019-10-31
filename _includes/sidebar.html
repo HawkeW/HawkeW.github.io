@@ -1,3 +1,4 @@
+
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
@@ -10,7 +11,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item active" href = '{{ site.github.url }}' >首页</a>
+      <a class="sidebar-nav-item active" style="text-decoration: none;" href = '{{ site.github.url }}' >首页</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -18,47 +19,33 @@
       {% endcomment %}
 
       <!-- 分类 -->
-      <!-- <ul>
-        {% for category in site.categories %}
-        <li><a href="{{site.baseurl}}/categories" data-category="all">归档</a></li>
-              {% for post in category.first %}
-        <li>
-                <a href="{{site.baseurl}}/categories/{{ category | first }}" 
-                data-category="{{category.first}}">
-                {{category.first}}({{category.last.size}})
-              </a>
-        </li>
+      <div class="category">
+        <a href="#" class="toggle"  onclick="toggleNode(this)"> 目录</a>
+        <div class="tohide" id = "sidebartoggle" style="display: none;">
+          <ul  >
+            {% for category in site.categories %}
+              <li >
+                <a href="/categories/{{ category | first }}" title="view all posts">
+              {{ category | first }} ({{ category | last | size }})</a>
+              </li>
               {% endfor %}
-          {% endfor %}
-    </ul> -->
-
-    <ul>
-
-        {% for category in site.categories %}
-        <li>
-          <a href="/categories/{{ category | first }}" title="view all posts">
-        {{ category | first }} ({{ category | last | size }})</a>
-        </li>
-        {% endfor %}
-    </ul>
-      <!-- 分类结束 -->
+          </ul>
+      </div>
+      </div>
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" style="text-decoration: none;" href="{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
       <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-    <span id="busuanzi_container_site_pv">
-      <!-- 总访问量<span id="busuanzi_value_site_pv"></span>次 -->
-    </span>
-    <br /><span id="busuanzi_container_site_uv">
+    <span id="busuanzi_container_site_uv">
       欢迎，你是第<span id="busuanzi_value_site_uv"></span>位小伙伴
     </span>
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
