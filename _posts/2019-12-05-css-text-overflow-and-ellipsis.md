@@ -2,7 +2,7 @@
 layout: post
 title:  "文本溢出省略号效果"
 date:   2019-12-05 10:50:00 +0800
-categories: Wordpress, 前端
+categories: 前端
 tags: 前端, overflow, css
 excerpt: css实现在文本溢出时使用省略号替换溢出文本
 typora-root-url: ..
@@ -18,11 +18,11 @@ typora-root-url: ..
 
 **原始效果：**
 
-![css-textoverflow-01](/images/04-css/css-textoverflow-01.jpg)
+![css-textoverflow-01](\images\04-css\css-textoverflow-01.jpg)
 
 **实现效果**：
 
-![css-textoverflow-02](/images/04-css/css-textoverflow-02.jpg)
+![css-textoverflow-02](\images\04-css\css-textoverflow-02.jpg)
 
 文本溢出的实现有2种常见形式：
 
