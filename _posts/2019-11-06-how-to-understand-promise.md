@@ -6,6 +6,7 @@ categories: 前端学习
 excerpt: 前端学习笔记:Promise(一):简单理解Promise
 tags: Promise,前端
 typora-root-url: ..
+main_image: '\images\mainimage\4-skateboarder-rides-past.jpg'
 ---
 
 前段时间是一直看着廖雪峰老师的[JavaScript教程]( https://www.liaoxuefeng.com/wiki/1022910821149312 )在学习，看到浏览器部分就开始有点力不迷糊了，再加上是一段换工作之旅，折腾到现在都有点飘飘然不知道从何下手。于是又从浏览器部分开始看，终于看到了[`Promise`]( https://www.liaoxuefeng.com/wiki/1022910821149312/1023024413276544 )这里。

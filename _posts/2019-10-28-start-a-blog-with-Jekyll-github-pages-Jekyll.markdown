@@ -5,9 +5,8 @@ date:   2019-10-28 12:04:00 +0800
 categories: Jekyll
 excerpt: 在互联网有一个完全自己合法操控的地址，想干嘛就干嘛 ，果然还是很酷呀……
 typora-root-url: ..
+main_image: '\images\mainimage\1-getting-business-finances-in-order.jpg'
 ---
-
-
 
 在互联网有一个完全自己合法操控的地址，想干嘛就干嘛 ，果然还是很酷呀……
 

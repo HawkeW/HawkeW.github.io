@@ -5,6 +5,7 @@ date:   2019-10-29 14:30:00 +0800
 categories: Jekyll
 excerpt: Github pages使用方法
 typora-root-url: ..
+main_image: '\images\mainimage\2-highway-through-high-architecture.jpg'
 ---
 
 

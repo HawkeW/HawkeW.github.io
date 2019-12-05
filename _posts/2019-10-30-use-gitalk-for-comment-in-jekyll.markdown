@@ -5,6 +5,7 @@ date:   2019-10-30 15:30:00 +0800
 categories: Jekyll
 excerpt: 使用gitalk快速添加博客评论组件
 typora-root-url: ..
+main_image: '\images\mainimage\3-payphone-on-brick-wall.jpg'
 ---
 
 在使用gitalk之前，有检索到关于gitment组件的文章，但经过测试使用后，发现一直报错` [object ProgressEvent]  `并无法进行初始化。
