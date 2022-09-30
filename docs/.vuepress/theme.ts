@@ -1,6 +1,6 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import {hopeTheme} from "vuepress-theme-hope";
+import {enNavbar, zhNavbar} from "./navbar/index.js";
+import {mySideBar} from "./sidebar/index.js";
 
 export default hopeTheme({
   encrypt: {
@@ -15,10 +15,10 @@ export default hopeTheme({
     name: "一度一度",
     url: "https://oncew.com",
   },
-  
+
   iconAssets: "iconfont",
 
-  logo: "/logo.svg",
+  logo: "/logo.jpg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -27,9 +27,7 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
-    medias: {
-      
-    },
+    medias: {},
   },
 
   locales: {
@@ -38,44 +36,19 @@ export default hopeTheme({
       navbar: enNavbar,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: mySideBar,
 
-      footer: "Default footer",
+      footer: "",
 
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
+        description: "一个前段开发者",
         intro: "/intro.html",
       },
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
-      },
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
       },
     },
   },
@@ -137,11 +110,11 @@ export default hopeTheme({
       stylize: [
         {
           matcher: "Recommanded",
-          replacer: ({ tag }) => {
+          replacer: ({tag}) => {
             if (tag === "em")
               return {
                 tag: "Badge",
-                attrs: { type: "tip" },
+                attrs: {type: "tip"},
                 content: "Recommanded",
               };
           },
@@ -168,30 +141,7 @@ export default hopeTheme({
         color: "#ffffff",
       },
       manifest: {
-        icons: [
-          {
-            src: "/assets/icon/chrome-mask-512.png",
-            sizes: "512x512",
-            purpose: "maskable",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-mask-192.png",
-            sizes: "192x192",
-            purpose: "maskable",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-192.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-        ],
+        icons: [],
         shortcuts: [
           {
             name: "Demo",

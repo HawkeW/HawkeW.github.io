@@ -1,4 +1,4 @@
-import { defineUserConfig } from "vuepress";
+import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -8,19 +8,13 @@ export default defineUserConfig({
 
   locales: {
     "/": {
-      lang: "en-US",
-      title: "Once°",
-      description: "Once I live, once I aim",
-    },
-    "/zh/": {
       lang: "zh-CN",
       title: "Once°",
-      description: "曾梦想仗剑走天涯",
+      description: "Home",
     },
   },
-  
+
   theme,
 
   shouldPrefetch: false,
-
 });
