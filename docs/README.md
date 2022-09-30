@@ -2,8 +2,9 @@
 home: true
 layout: Blog
 icon: home
-title: home
-# heroImage: /home.jpg
+title: Home
+bgImage: /homebg.png
+heroImage: /logo.jpg
 heroImageStyle: {
   height: '150px',
   width: '150px',
