@@ -12,24 +12,24 @@ tag:
 - npm安装 
 - VS插件
 ```bash
-npm install -g typescript
+$ npm install -g typescript
 ```
 
 #### 编译代码
 命令行运行:
 ```bash
-tsc xxx.ts
+$ tsc xxx.ts
 ```
 #### 使用
 - 类型注解
-```Javascript
+```ts
 function greeter(person: string) {
     console.log("Hello, " + person);
 }
 greeter("Jane")
 ```
 - 接口(interface)
-```Javascript
+```ts
 interface Person {
     firstName: string;
     lastName: string;
@@ -42,7 +42,7 @@ greeter(user)
 
 ```
 - 类
-```Javascript
+```ts
 class Student {
     fullName: string;
     constructor(firstName, middleInitial, lastName) {
@@ -75,7 +75,7 @@ greeter(user);
 8. Never
 9. Object
 
-```Javascript
+```ts
 // boolean
 let isDone: boolean = false; 
 // number
