@@ -1,6 +1,6 @@
 ---
 title: Cesium + TS 实现航线绘制
-date: 2021-05-17
+date: 2021-05-17T00:00:00.000Z
 sidebarDepth: 5
 category:
   - frontend
@@ -9,6 +9,10 @@ tag:
   - Cesium
 description: Cesium + TS 实现在地球上进行航线绘制，并设置高度。
 typora-root-url: ..
+createdAt: 2022/11/18下午2:06:44
+editor: Markdown
+lastUpdatedAt: 2022/11/18下午2:06:44
+
 ---
 
 ## 开始

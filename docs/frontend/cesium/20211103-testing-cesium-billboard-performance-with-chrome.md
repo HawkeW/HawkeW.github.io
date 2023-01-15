@@ -1,7 +1,6 @@
 ---
 title: Cesium添加万级Billboard数据及性能测试优化
-date: 2021-11-03
-sidebarDepth: 5
+date: 2021-11-03T00:00:00.000Z
 category:
   - frontend
 tag:
@@ -9,6 +8,11 @@ tag:
   - Cesium
 description: 输出本篇文章主要是为记录测试和学习的过程，毕竟好久没有水一篇正经文章了。。。
 typora-root-url: ..
+createdAt: 2022/11/18下午2:05:42
+editor: VS code
+lastUpdatedAt: 2022/11/18下午2:05:42
+headerDepth: 4
+
 ---
 
 由于飞行架次一般都是万级数据在地图的显示，所以这次做了万级数据的显示测试，主要用于测试`Cesium`渲染效率及表现，方便后续做数据接入。
@@ -101,7 +105,21 @@ for(let i = 0; i < 10; ++) {
 
 ### 伪`MassMarks`实现：
 
+
 以下是模拟高德`MassMarks` 接口做出的封装：
+
+#### 标题4
+
+123
+
+##### 标题5
+
+123
+
+###### 标题6
+11234
+
+####### 标题7
 
 ```typescript
 type MassMarksOptions = {

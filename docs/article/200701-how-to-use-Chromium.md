@@ -1,14 +1,16 @@
 ---
-
 title: 【教程向】如何在 Chromium 同步谷歌账号
-date: 2020-07-01
-category: 
- - article
-tag: 
- - Chrome
-
+date: 2020-07-01T00:00:00.000Z
+category:
+  - article
+tag:
+  - Chrome
 sidebar: false
 typora-root-url: ..\.vuepress\public
+createdAt: 2022/11/18下午2:05:36
+editor: VS code
+lastUpdatedAt: 2022/11/18下午2:05:36
+
 ---
 
 :::tip

@@ -1,12 +1,14 @@
 ---
-
 title: 【随笔】又是一个枯燥的周六
-date: 2020-06-20
-category: 
- - article
-
+date: 2020-06-20T00:00:00.000Z
+category:
+  - article
 sidebar: false
 typora-root-url: ..\.vuepress\public
+createdAt: 2022/11/18下午2:05:35
+editor: VS code
+lastUpdatedAt: 2022/11/18下午2:05:35
+
 ---
 
 :::tip

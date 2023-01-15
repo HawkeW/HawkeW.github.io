@@ -1,11 +1,14 @@
 ---
-
 title: 【随笔】一个前端学习的todo list
-date: 2020-05-11
-category: 
- - article
+date: 2020-05-11T00:00:00.000Z
+category:
+  - article
 description: 长期更新……
 typora-root-url: ..\.vuepress\public
+createdAt: 2022/11/18下午2:05:30
+editor: VS code
+lastUpdatedAt: 2022/11/18下午2:05:30
+
 ---
 本来应该做一个网页端的todo list来放这里的内容。不过近期还是挺忙的，所以先往后推推。
 这个todo list也是为了防止自己在学习过程手忙脚乱，所以以周为节点进行项目进度和学习进度的跟进记录。
