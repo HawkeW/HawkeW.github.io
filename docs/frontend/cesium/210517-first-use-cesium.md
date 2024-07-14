@@ -1,7 +1,7 @@
 ---
 title: Cesium + TS 实现航线绘制
 date: 2021-05-17T00:00:00.000Z
-sidebarDepth: 5
+headerDepth: 5
 category:
   - frontend
 tag:

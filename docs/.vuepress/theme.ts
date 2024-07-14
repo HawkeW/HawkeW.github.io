@@ -16,7 +16,7 @@ export default hopeTheme({
     url: "https://oncew.com",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "/iconfont",
 
   logo: "/logo.jpg",
 
@@ -55,7 +55,7 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-      autoExcerpt: false,
+      excerpt: false
     },
 
     // If you don't need comment feature, you can remove following option
@@ -104,7 +104,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
+      revealJs: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
       stylize: [

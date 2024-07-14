@@ -5,7 +5,7 @@ category:
  - uniapp
 tag: 
  - uni-app
-sidebarDepth: 4
+headerDepth: 4
 keys:
  - e59c7887bc56033c124fd3999db9110d
  - c2eff78af0cf9e9fd86b1a56f1c33324
