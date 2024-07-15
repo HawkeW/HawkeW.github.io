@@ -90,15 +90,14 @@ export default hopeTheme({
       attrs: true,
       chart: true,
       codetabs: true,
-      container: true,
+      
       demo: true,
       echarts: true,
       flowchart: true,
       gfm: true,
-      imageSize: true,
+      imgLazyload: true,
       include: true,
       katex: true,
-      lazyLoad: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -123,7 +122,7 @@ export default hopeTheme({
       sub: true,
       sup: true,
       tabs: true,
-      vpre: true,
+      vPre: true,
       vuePlayground: true,
     },
 

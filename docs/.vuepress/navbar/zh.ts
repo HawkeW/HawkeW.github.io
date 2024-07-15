@@ -15,8 +15,6 @@ export const zhNavbar = navbar([
         children: [
           { text: "苹果1", icon: "edit", link: "1" },
           { text: "苹果2", icon: "edit", link: "2" },
-          "3",
-          "4",
         ],
       },
       {
@@ -34,8 +32,6 @@ export const zhNavbar = navbar([
             icon: "edit",
             link: "2",
           },
-          "3",
-          "4",
         ],
       },
       { text: "樱桃", icon: "edit", link: "cherry" },
