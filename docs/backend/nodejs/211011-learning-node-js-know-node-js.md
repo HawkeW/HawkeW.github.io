@@ -19,29 +19,29 @@ typora-root-url: ..\.vuepress\public
 
    ```bash
    // 方式1
-   $ npx express-generator
+   npx express-generator
    ```
 
    ```bash
    // 方式2
-   $ npm install -g express-generator
-   $ express
+   npm install -g express-generator
+   express
     
-   $ express --view=pug myapp
+   express --view=pug myapp
    ```
 
 
 2. 在项目目录安装依赖
 
    ```bash
-   $ cd myapp
-   $ npm install
+   cd myapp
+   npm install
    ```
 
 3. 运行项目(Windows)。
 
     ```bash
-    $ npm start
+    npm start
     ```
 
 4. 项目目录如下
@@ -70,7 +70,7 @@ typora-root-url: ..\.vuepress\public
 
 5. 项目默认端口为`3000`, 浏览器输入`http://localhost:3000`效果如下:
 
-   ![image-20211011151611574](\image-20211011151611574.png)
+   ![image-20211011151611574](/assets/img/image-20211011151611574.png)
 
 ### 基本路由（routing）
 

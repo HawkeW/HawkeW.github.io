@@ -49,9 +49,11 @@ console.log(a.x, b.x);
 
 解答：
 
+```js
 1, 1
 
 undefined, { n : 2 } 
+```
 
 等价于
 

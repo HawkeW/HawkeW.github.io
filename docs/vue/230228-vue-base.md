@@ -87,7 +87,7 @@ client.on('message', function (topic, message) {
 })
 ```
 
-![渲染](/assets/img/08-searhinput/mqtt.jpg)
+![渲染](/assets/img/13-vuebase/mqtt.jpg)
 
 #### 发布订阅者模式与观察者模式异同
 
@@ -226,7 +226,7 @@ createApp({
 
 在 vue 中，ui 的渲染流程：
 
-![渲染](/assets/img/08-searhinput//vue-dom-rendering.png)
+![渲染](/assets/img/13-vuebase/vue-dom-rendering.png)
 
 1. 模板Template 将会被（编译器`compiler`）编译为渲染函数（运行时`render`）代码
 在编译为渲染函数代码时，`Vue` 对于组件的响应式状态进行了`依赖收集`，这样，当响应式状态改变时，可以`触发重绘`，达到响应式更新的效果。

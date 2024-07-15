@@ -17,11 +17,11 @@ typora-root-url: ..
 
 **原始效果：**
 
-![css-textoverflow-01](/assets/img/04-css/css-textoverflow-01.jpg)
+<!-- ![css-textoverflow-01](/assets/img/04-css/css-textoverflow-01.jpg) -->
 
 **实现效果**：
 
-![css-textoverflow-02](/assets/img/04-css/css-textoverflow-02.jpg)
+<!-- ![css-textoverflow-02](/assets/img/04-css/css-textoverflow-02.jpg) -->
 
 文本溢出的实现有2种常见形式：
 

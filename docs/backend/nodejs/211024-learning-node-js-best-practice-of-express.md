@@ -15,7 +15,7 @@ typora-root-url: ..\.vuepress\public
 安装:: 
 
 ```shell
-$ npm install --global nodemon
+npm install --global nodemon
 ```
 
 使用：
@@ -23,7 +23,7 @@ $ npm install --global nodemon
 用`nodemon xx `代替 `node xx`
 
 ```bash
-$ nodemon app.js
+nodemon app.js
 ```
 
 ### 模板引擎- `art-template`
@@ -34,8 +34,8 @@ $ nodemon app.js
 安装：
 
 ```shell
-$ npm install --save art-template
-$ npm install --save express-art-template
+npm install --save art-template
+npm install --save express-art-template
 ```
 
 配置
@@ -79,7 +79,7 @@ Express 没有内置获取表单POST请求体的API, 这里使用一个第三方
 安装：
 
 ```sh
-$ npm install body-parser
+npm install body-parser
 ```
 
 使用：
