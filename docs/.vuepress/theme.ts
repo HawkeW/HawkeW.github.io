@@ -1,6 +1,6 @@
-import {hopeTheme} from "vuepress-theme-hope";
-import {enNavbar, zhNavbar} from "./navbar/index.js";
+import {enNavbar} from "./navbar/index.js";
 import {mySideBar} from "./sidebar/index.js";
+import { hopeTheme } from "vuepress-theme-hope";
 
 export default hopeTheme({
   encrypt: {
