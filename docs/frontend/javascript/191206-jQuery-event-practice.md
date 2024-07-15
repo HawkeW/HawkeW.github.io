@@ -82,6 +82,8 @@ input.change(); // 触发change事件<==>input.trigger('change')
 
 ---
 
+```js
+
 <form id="test-form" action="test">
     <legend>请选择想要学习的编程语言：</legend>
     <fieldset>
@@ -145,6 +147,7 @@ langs.change(function(){
 });
 </script>
 
+```
 ### 实现思路
 
 反思一下，我是先动手再来找问题的，所以反反复复了很久。所以写这篇文章，也是为了重新梳理一下思路。
