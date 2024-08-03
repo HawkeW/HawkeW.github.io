@@ -43,7 +43,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
+        description: "前端开发者, 喜爱前端生态的Flutter用户。",
         intro: "/intro.html",
       },
 
@@ -55,7 +55,7 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-      excerpt: false
+      excerpt: false,
     },
 
     // If you don't need comment feature, you can remove following option
