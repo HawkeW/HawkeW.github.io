@@ -16,6 +16,9 @@ export default defineUserConfig({
     vuePluginOptions: {},
   }),
   dest: "./dist",
+  alias: {
+    "@components": path.resolve(__dirname, "components/src"),
+  },
   locales: {
     "/": {
       lang: "zh-CN",

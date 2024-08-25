@@ -1,6 +1,7 @@
 import {enNavbar} from "./navbar/index.js";
 import {mySideBar} from "./sidebar/index.js";
 import { hopeTheme } from "vuepress-theme-hope";
+import { path } from 'vuepress/utils'
 
 export default hopeTheme({
   encrypt: {
@@ -96,7 +97,18 @@ export default hopeTheme({
       flowchart: true,
       gfm: true,
       imgLazyload: true,
-      include: true,
+      include: {
+          deep: true,
+          resolvePath: (file) => {
+            if (file.startsWith("@components/")) 
+              return file.replace(
+                "@components",
+                path.resolve(__dirname, "../../../components/src"),
+              );
+            return file;
+          },
+          resolveLinkPath: false,
+        },
       katex: true,
       mark: true,
       mermaid: true,
