@@ -1,8 +1,9 @@
 {
-  "name": "vuepress-theme-hope-template",
+  "name": "onceonce",
   "version": "2.0.0",
   "description": "A project of vuepress-theme-hope",
   "license": "MIT",
+  "private": true,
   "type": "module",
   "scripts": {
     "docs:build": "vuepress-vite build docs",

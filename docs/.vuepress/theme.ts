@@ -44,7 +44,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "前端开发者, 喜爱前端生态的Flutter用户。",
+        description: "无限进步",
         intro: "/intro.html",
       },
 
