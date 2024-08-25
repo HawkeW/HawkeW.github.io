@@ -34,4 +34,5 @@ const items = introKeys.map(item => ({
   key: item,
   value: props[item]
 }))
+  .filter(item => item.value)
 </script>

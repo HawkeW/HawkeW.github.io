@@ -13,7 +13,6 @@ layout: ResumeLayout
 resume:
   intro:
     name: 一度
-    phone: 185****9509
     e-mail: hughew@foxmail.com
     certificates:
       -  CET-6
