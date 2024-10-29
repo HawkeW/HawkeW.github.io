@@ -137,7 +137,9 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
+    feed: {
+      rss: true,
+    },
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,

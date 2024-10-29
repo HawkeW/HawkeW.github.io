@@ -60,6 +60,7 @@ const resume = (pageFrontmatter.value as ResumePageFrontMatter).resume
 </script>
 
 <style scoped>
+@import '@unocss/reset/tailwind.css';
 * {
   font-family: PingFangSC-Thin, sans-serif;
   overflow: hidden;
