@@ -5,7 +5,7 @@ category:
  - desktop
 tag: 
  - roadmap
-sidebar: heading
+sidebar: true
 
 ---
 

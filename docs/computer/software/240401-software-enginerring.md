@@ -6,7 +6,7 @@ category:
  - software
 tag: 
  - Engineering
-sidebar: heading
+sidebar: true
 
 ---
 

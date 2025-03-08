@@ -6,7 +6,7 @@ category:
  - computer graphics
 tag: 
  - GLSL
-sidebar: heading
+sidebar: true
 
 ---
 

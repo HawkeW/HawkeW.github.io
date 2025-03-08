@@ -2,6 +2,7 @@ import {enNavbar} from "./navbar/index.js";
 import {mySideBar} from "./sidebar/index.js";
 import { hopeTheme } from "vuepress-theme-hope";
 import { path } from 'vuepress/utils'
+import {mdEnhancePlugin} from 'vuepress-plugin-md-enhance'
 
 export default hopeTheme({
   encrypt: {
@@ -16,8 +17,6 @@ export default hopeTheme({
     name: "一度一度",
     url: "https://oncew.com",
   },
-
-  iconAssets: "/iconfont",
 
   logo: "/logo.jpg",
 
@@ -84,58 +83,8 @@ export default hopeTheme({
       // provider: "Waline",
       // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     },
-
-    // Disable features you don't want here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      chart: true,
-      codetabs: true,
-      
-      demo: true,
-      echarts: true,
-      flowchart: true,
-      gfm: true,
-      imgLazyload: true,
-      include: {
-          deep: true,
-          resolvePath: (file) => {
-            if (file.startsWith("@components/")) 
-              return file.replace(
-                "@components",
-                path.resolve(__dirname, "../../../components/src"),
-              );
-            return file;
-          },
-          resolveLinkPath: false,
-        },
-      katex: true,
-      mark: true,
-      mermaid: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      revealJs: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
-      stylize: [
-        {
-          matcher: "Recommanded",
-          replacer: ({tag}) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: {type: "tip"},
-                content: "Recommanded",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      vPre: true,
-      vuePlayground: true,
+    icon: {
+      assets: "/iconfont",
     },
     feed: {
       rss: true,
@@ -143,7 +92,7 @@ export default hopeTheme({
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
-      cachePic: true,
+      cacheImage: true,
       appendBase: true,
       apple: {
         icon: "/assets/icon/apple-icon-152.png",
@@ -177,6 +126,56 @@ export default hopeTheme({
           },
         ],
       },
+    },
+    markdown: {
+      chartjs: true,
+      demo: true,
+      echarts: true,
+      flowchart: true,
+      mermaid: true,
+      playground: {
+        presets: ["ts", "vue"],
+      },
+      vuePlayground: true,
+      align: true,
+      attrs: true,
+      sub: true,
+      sup: true,
+      mark: true,
+      stylize: [
+        {
+          matcher: "Recommanded",
+          replacer: ({tag}) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: {type: "tip"},
+                content: "Recommanded",
+              };
+          },
+        },
+      ],
+      gfm: true,
+      vPre: true,
+      tabs: true,
+      codeTabs: true,  
+      katex: true,
+      lazyload: true,
+      include: {
+        deep: true,
+        resolvePath: (file) => {
+          if (file.startsWith("@components/")) 
+            return file.replace(
+              "@components",
+              path.resolve(__dirname, "../../../components/src"),
+            );
+          return file;
+        },
+        resolveLinkPath: false,
+      },
+      revealJs: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+      }
     },
   },
 });
