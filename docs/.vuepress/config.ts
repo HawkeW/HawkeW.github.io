@@ -30,7 +30,7 @@ export default defineUserConfig({
     "/": {
       lang: "zh-CN",
       title: "Once°",
-      description: "Home",
+      description: "feedId:73967150202997760+userId:73595302294285312",
     },
   },
 
