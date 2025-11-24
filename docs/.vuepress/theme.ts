@@ -1,8 +1,8 @@
-import {enNavbar} from "./navbar/index.js";
-import {mySideBar} from "./sidebar/index.js";
+import { enNavbar } from "./navbar/index.js";
+import { mySideBar } from "./sidebar/index.js";
 import { hopeTheme } from "vuepress-theme-hope";
 import { path } from 'vuepress/utils'
-import {mdEnhancePlugin} from 'vuepress-plugin-md-enhance'
+import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance'
 
 export default hopeTheme({
   encrypt: {
@@ -98,10 +98,6 @@ export default hopeTheme({
         icon: "/assets/icon/apple-icon-152.png",
         statusBarColor: "black",
       },
-      msTile: {
-        image: "/assets/icon/ms-icon-144.png",
-        color: "#ffffff",
-      },
       manifest: {
         icons: [],
         shortcuts: [
@@ -127,55 +123,55 @@ export default hopeTheme({
         ],
       },
     },
-    markdown: {
-      chartjs: true,
-      demo: true,
-      echarts: true,
-      flowchart: true,
-      mermaid: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      vuePlayground: true,
-      align: true,
-      attrs: true,
-      sub: true,
-      sup: true,
-      mark: true,
-      stylize: [
-        {
-          matcher: "Recommanded",
-          replacer: ({tag}) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: {type: "tip"},
-                content: "Recommanded",
-              };
-          },
-        },
-      ],
-      gfm: true,
-      vPre: true,
-      tabs: true,
-      codeTabs: true,  
-      katex: true,
-      lazyload: true,
-      include: {
-        deep: true,
-        resolvePath: (file) => {
-          if (file.startsWith("@components/")) 
-            return file.replace(
-              "@components",
-              path.resolve(__dirname, "../../../components/src"),
-            );
-          return file;
-        },
-        resolveLinkPath: false,
-      },
-      revealJs: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      }
+
+  },
+  markdown: {
+    chartjs: true,
+    demo: true,
+    echarts: true,
+    flowchart: true,
+    mermaid: true,
+    playground: {
+      presets: ["ts", "vue"],
     },
+    vuePlayground: true,
+    align: true,
+    attrs: true,
+    sub: true,
+    sup: true,
+    mark: true,
+    stylize: [
+      {
+        matcher: "Recommanded",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommanded",
+            };
+        },
+      },
+    ],
+    gfm: true,
+    vPre: true,
+    tabs: true,
+    codeTabs: true,
+    include: {
+      deep: true,
+      resolvePath: (file) => {
+        if (file.startsWith("@components/"))
+          return file.replace(
+            "@components",
+            path.resolve(__dirname, "../../../components/src"),
+          );
+        return file;
+      },
+      resolveLinkPath: false,
+    },
+    math: true,
+    revealjs: {
+      plugins: ["highlight", "math", "search", "notes", "zoom"],
+    }
   },
 });
